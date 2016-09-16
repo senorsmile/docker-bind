@@ -1,3 +1,4 @@
 #!/bin/sh
-chown -R named:named /var/cache/bind
-/usr/sbin/named -c /etc/bind/named.conf -g -u named
+#chown -R named:named /var/cache/bind
+#/usr/sbin/named -c /etc/bind/named.conf -g -u named
+/usr/sbin/named -c /etc/bind/named.conf -g -u root
