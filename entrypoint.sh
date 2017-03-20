@@ -1,4 +1,7 @@
 #!/bin/sh
+
+#set -x
+
 #chown -R named:named /var/cache/bind
 #/usr/sbin/named -c /etc/bind/named.conf -g -u named
 
@@ -15,4 +18,7 @@ if [ "$disable_ipv6" == True ]; then
   OPT_PARAMS="$OPT_PARAMS -4"
 fi
 
-/usr/sbin/named "${OPT_PARAMS}"
+#echo "calling: /usr/sbin/named ${OPT_PARAMS}"
+
+#sleep 10000
+/usr/sbin/named ${OPT_PARAMS}
